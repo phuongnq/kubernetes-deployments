@@ -306,6 +306,8 @@ spec:
           env:
             - name: DEPLOYER_JAVA_OPTS
               value: "-server -Xss1024K -Xmx2G -XX:MaxRAMPercentage=70.0"
+            - name: SPRING_PROFILES_ACTIVE
+              value: "crafter.studio.dbClusterPrimaryReplica"
           resources:
             requests:
               cpu: 1
